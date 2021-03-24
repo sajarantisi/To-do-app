@@ -44,18 +44,16 @@ body {
   outline: none;
 }
 .main_div #btn_Add {
-  padding: 6px 10px;
   border-radius: 3px;
   border: none;
   outline: none;
   color: #fff;
-  font-size: 16px;
   background: #8e49e8;
-  /* user-select: none; */
   margin: 20px 0;
   width: 10%;
   height: 45px;
   text-align: center;
+  font-size: 35px;
 }
 .foo {
   display: flex;
