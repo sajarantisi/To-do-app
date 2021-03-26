@@ -70,8 +70,10 @@ function showToDo(index){
         document.querySelectorAll('#cont_list').forEach(function(a){
             a.remove()
             }) //حذف المحتوى من الصفحة 
-    
+            
     }
+    del_element();
+
     span_num.textContent = localStorage.length ; // لحساب كم عنصر موجود في localStorage 
 }
 
@@ -81,6 +83,28 @@ clear.addEventListener("click" , function clean(event){
     showToDo(-1);
 
 })
-
+function del_element(){
+    const elem= document.querySelectorAll('#btn_delete');
+    const content=document.querySelectorAll('#cont_list');
+    elem.forEach(function(item , index){
+        item.addEventListener('click',function delete_el(event){
+            event.preventDefault();
+            if(localStorage.length != 1){
+              let tmp=index;
+              while(tmp < localStorage.length-1){
+                  localStorage.setItem(tmp,localStorage.getItem(tmp+1))
+                  tmp++ ;
+              }
+              localStorage.removeItem(tmp);
+            }
+            else{
+            localStorage.removeItem(index);
+         }
+         content[index].remove();
+         
+        },{once:true})
+    }) 
+  
+    }
 
 window.onload = showToDo(0); // يتم تحديث الصفحة يعرض كل محتويات الستورج  
