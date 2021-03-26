@@ -11,7 +11,8 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .main_div {
-  width: 100%;
+  width: 70%;
+  
   height: 70%;
   margin: auto;
   margin-top: 20px;
@@ -26,6 +27,8 @@ body {
   font-size: 2rem;
   margin-top: 20px;
   margin-left: 3%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .main_div .form {
   display: flex;
@@ -34,14 +37,17 @@ body {
 }
 .main_div #write_new {
   margin: 20px 0;
-  width: 70%;
-  height: 45px;
-  text-align: center;
+  width: 85%;
+  padding: 15px 5px 15px 5px;
   border-radius: 5px;
   box-shadow: 0px 10px 15px rgba(202, 190, 190, 0.1);
   margin-right: 6%;
-  /* border: rgb(179, 169, 169); */
+  border:1px solid lightgray;
   outline: none;
+}
+.main_div #write_new::placeholder{
+  color: lightgray;
+  font-size: 20px;
 }
 .main_div #btn_Add {
   border-radius: 3px;
@@ -64,6 +70,7 @@ body {
   margin: 20px 0;
   width: 50%;
   height: 45px;
+  font-size: 20px;
   text-align: center;
   margin-right: 31%;
   padding-right: 21%;
@@ -84,13 +91,40 @@ body {
   text-align: center;
   margin-right: 3%;
 }
-/* .main_div #list {
-  width: 71%;
-  height: 45px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0px 10px 15px rgba(202, 190, 190, 0.1);
-  background-color: #80808045;
-  margin: auto;
-  margin-right: 26%;
-} */
+.main_div #list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#cont_list {
+ display: flex;
+ justify-content: space-between; 
+ flex-wrap: wrap;
+ padding: 5px;
+ background-color: #80808045;
+ margin-bottom: 10px;
+ box-shadow: 0px 10px 15px rgba(202, 190, 190, 0.1);
+  align-items: center;
+}
+
+#cont_list p {
+  font-size: 20px;
+}
+.btns {
+  padding: 10px ;
+  border: 1px solid transparent;
+  margin-left: 5px;
+  color: #FFF;
+  font-weight: bold;
+}
+#btn_delete {
+  background-color: red;
+}
+#btn_edit {
+  background-color: blue;
+}
+
+#num_list {
+  color: red;
+  font-weight: bold;
+}
