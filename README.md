@@ -8,7 +8,7 @@ I can remove any item from my list (remove it from local storage)
 I can still get my list even if I close the browser window
 
 ### Project content:
-* The project contains one page using (HTML , CSS AND JA ) .
+* The project contains one page using (HTML , CSS AND JS ) .
 
 * The page contains a input and a button to add what is entered inside the input
 It contains a button for cleaning .
