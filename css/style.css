@@ -59,6 +59,7 @@ body {
   height: 45px;
   text-align: center;
   font-size: 35px;
+  cursor: pointer;
 }
 .foo {
   display: flex;
@@ -89,6 +90,7 @@ body {
   height: 45px;
   text-align: center;
   margin-right: 3%;
+  cursor: pointer;
 }
 .main_div #list {
   margin-top: 10px;
@@ -115,12 +117,15 @@ body {
   margin-left: 5px;
   color: #FFF;
   font-weight: bold;
+  cursor: pointer;
 }
 #btn_delete {
   background-color: red;
+  cursor: pointer;
 }
 #btn_edit {
   background-color: blue;
+  cursor: pointer;
 }
 
 #num_list {
